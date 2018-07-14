@@ -2,8 +2,8 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
 var context = new AudioContext();
 var myBuffer;
 
-clickme = document.getElementById('clickme');
-clickme.addEventListener('click',clickHandler);
+play_clip = document.getElementById('play_clip');
+play_clip.addEventListener('click',clickHandler);
 
 var request = new XMLHttpRequest();
 
