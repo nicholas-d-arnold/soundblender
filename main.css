@@ -1,5 +1,15 @@
+body {
+	height: 800px;
+}
+
 .site-header {
 	background-color: lightgrey;
 	padding: 5px;
 	text-align: center;
+}
+.footer {
+	background-color: lightgrey;
+	padding: 5px;
+	padding-bottom: 35px;
+	margin-top: 20px;
 }
