@@ -1,4 +1,4 @@
-To Allow Cross-Origin Requests:Run a Python server
+To Allow Cross-Origin Requests: Run a Python server
 
 Python3
 ------------------------------------------------
