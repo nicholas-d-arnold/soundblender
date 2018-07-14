@@ -7,7 +7,7 @@ play_clip = document.getElementById('play_clip_btn');
 play_clip.addEventListener('click',clickHandler);
 
 mute_btn = document.getElementsByClassName('mute')[0];
-mute_btn.addEventListener('click',voiceMute);
+mute_btn.addEventListener('click',playbackMute);
 
 var request = new XMLHttpRequest();
 
@@ -42,7 +42,7 @@ function clickHandler(e) {
 }
 
 
-function voiceMute() {
+function playbackMute() {
   console.log()
   if(mute_btn.id == "") {
     g.gain.setValueAtTime(0, context.currentTime);
