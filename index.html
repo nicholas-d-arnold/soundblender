@@ -45,9 +45,21 @@
       </div>
       <br><br>
       <div class="row">
-        <div class="col">
+        <div class="col-6">
           <button class="btn btn-secondary" id="play_clip_btn">Play Piano Snippet</button>
-          <button class="btn btn-secondary mute">Mute button</button>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="col-6">
+              <button class="btn btn-secondary mute">Mute</button>  
+            </div>
+            <div class="col-6">
+              <div class="form-group w-100 p3">
+                <label for="volume">Volume</label>
+                <input id="volume" class="slider" type="range" min="0" max="0.5" step="0.001" value="0.25"/>
+              </div>    
+            </div>
+          </div>
         </div>
       </div>
     </div>
