@@ -15,14 +15,7 @@ mute_btn.addEventListener('click',playbackMute);
 vol_slider = document.getElementById('volume');
 vol_slider.addEventListener('change', volumeSlider);
 
-function volumeSlider(e) {
-  if (mute_btn.id == "activated") {
-    g.gain.value = 0;
-  }
-  else {
-    g.gain.value = vol_slider.value
-  }
-}
+
 // GET: AUDIO FILE
 var request = new XMLHttpRequest();
 request.open('GET', '/audiofiles/piano1.wav', true);
@@ -35,6 +28,15 @@ request.onload = function() {
 }
 request.send();
 
+// VOLUME SLIDER
+function volumeSlider(e) {
+  if (mute_btn.id == "activated") {
+    g.gain.value = 0;
+  }
+  else {
+    g.gain.value = vol_slider.value
+  }
+}
 
 function onError() {
   console.log("error")
